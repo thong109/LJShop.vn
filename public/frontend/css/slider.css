@@ -1,0 +1,44 @@
+.slider {
+    height:400px;
+    position:relative;
+}
+
+
+.slider > .slides > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:90%;
+    margin: 0 5%;
+    height:100%;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0;
+}
+
+
+.slider > .slides > div.active {
+    opacity:1;
+}
+
+.slider > .page-nav {
+    position:absolute;
+    text-align:center;
+    width:100%;
+    bottom:12px;
+    left:0;
+    opacity: 0;
+}
+
+.slider > .page-nav  > li {
+    width:25px;
+    height:25px;
+    background-color:rgba(255,255,255,0.5);
+    display:inline-block;
+    border-radius:5px;
+}
+
+.slider > .page-nav  > li.active {
+    background-color:rgba(255,255,255,1);
+}
